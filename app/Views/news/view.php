@@ -4,4 +4,4 @@
 <p>Categoria: <?= esc($news['category']) ?></p>
 <p><?= esc($news['content']) ?></p>
 
-<a href="<?= base_url('https://localhost:8080') ?>">Tornar a la llista de notícies</a>
+<a class="back" href="<?= base_url('https://localhost:8080') ?>"><button class="button">Tornar a la llista de notícies</button></a>

@@ -9,7 +9,7 @@
         <div class="main">
             <?= esc(date("d-m-Y", strtotime($news_item['publication_date']))) ?>
         </div>
-        <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
+        <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">Llegir l'article</a></p>
 
         
 
