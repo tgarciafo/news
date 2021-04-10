@@ -14,6 +14,8 @@
         
 
     <?php endforeach; ?>
+    <?= $pager->links() ?>
+
 
 <?php else : ?>
 

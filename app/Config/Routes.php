@@ -34,6 +34,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('news/(:segment)', 'News::view/$1');
 $routes->get('news', 'News::index');
+$routes->resource('api/notícies', ['controller'=> 'RestNew']);
+$routes->resource('api/notícia', ['controller'=> 'RestNew']);
+
 /* $routes->get('(:any)', 'News::view/$1');
  */
 /*
