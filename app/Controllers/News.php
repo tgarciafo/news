@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace App\Controllers;
 
@@ -40,4 +40,5 @@ public function view($slug = NULL)
     echo view('news/view', $data);
     echo view('templates/footer', $data);
 }
+
 }

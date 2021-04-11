@@ -15,6 +15,9 @@
 
     <?php endforeach; ?>
 
+    <a class="crud" href="<?= base_url('https://localhost:8080/index.php/Table_news/news') ?>"><button class="buttonCRUD">Formulari CRUD Notícies</button></a>
+
+
     <?= $pager->links() ?>
 
 

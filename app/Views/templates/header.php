@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>CodeIgniter Tutorial</title>
+    
     <style>
 
         body{
@@ -35,7 +36,7 @@
 			color: rgba(221, 72, 20, 1);
 		}
 
-        a.back{
+        a.back, a.crud{
             display: block;
             margin: 20px;
         }
@@ -58,6 +59,27 @@
             color: black; 
             border: 2px solid #008CBA;
         }
+
+        .buttonCRUD{
+            background-color: #119E1C;
+            border: none;
+            color: white;
+            padding: 16px 18px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .buttonCRUD:hover {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #119E1C;
+        }
+
+
 
     </style>
 </head>
