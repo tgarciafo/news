@@ -16,6 +16,8 @@ class NewsModel extends Model
     }
 
     return $this->asArray()
+                ->select('news.*, categories.category')
+                ->join('categories', 'categories.id_category=news.id_category')
                 ->where(['slug' => $slug])
                 ->first();
         

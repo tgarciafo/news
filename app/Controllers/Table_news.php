@@ -11,7 +11,7 @@ class Table_news extends BaseController
 	    $crud->setTable('news');
 
 	    $output = $crud->render();
-
+		
 		return $this->_exampleOutput($output);
 	}
 

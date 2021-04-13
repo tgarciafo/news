@@ -20,5 +20,5 @@ class RestNew extends ResourceController
 
         return $this->respond($new);
     }
-
+    
 }
