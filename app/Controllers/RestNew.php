@@ -21,7 +21,7 @@ class RestNew extends ResourceController
         $this->model->select('news.id, news.title, news.publication_date');
                
 
-            return $this->respond($this->model->paginate(2, '', $page));
+            return $this->respond($this->model->paginate(10, '', $page));
     }
 
     public function show($id=null){
