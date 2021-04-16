@@ -13,9 +13,8 @@ class News extends BaseController
     $model = new NewsModel();
 
     $data = [
-        'news'  => $model->paginate(2),
+        'news'  => $model->getNews(),
         'title' => 'Llista de notícies',
-		'pager' => $model->pager,
     ];
 
     echo view('templates/header', $data);
