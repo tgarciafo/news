@@ -14,10 +14,14 @@ class RestNew extends ResourceController
         $this->db=db_connect();
     }
 
-    public function index()
+    public function index($page=null)
     
     {
-            return $this->respond($this->model->findAll());
+
+        $this->model->select('news.id, news.title, news.publication_date');
+               
+
+            return $this->respond($this->model->paginate(2, '', $page));
     }
 
     public function show($id=null){
