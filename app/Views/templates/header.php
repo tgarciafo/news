@@ -7,6 +7,7 @@
 
         body{
             margin: 50px;
+            background-color: #ECB59D;
         }
 
         ul {
