@@ -11,6 +11,8 @@
         </div>
         <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">Llegir l'article</a></p>
 
+
+<hr style="width:30%;  margin:0; height: 2.5px; border:2px solid black;">
         
 
     <?php endforeach; ?>
